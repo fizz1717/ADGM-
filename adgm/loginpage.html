@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/scss/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>ADGM</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="bg1"></div>
+      <div class="bg2"></div>
+      <div class="bg3"></div>
+      <div class="login-wrapper">
+        <div class="login-wrapper-inner">
+          <div class="login-left">
+            <img class="login-logo" src="assets/images/logo.svg" alt="logo" />
+            <p>
+              <span
+                >© 2022 Abu Dhabi Global Market. <br />
+                All rights Reserved.</span
+              ><br />
+              Abu Dhabi Global Market has been established in accordance with
+              the Federal Decree No. (15) of 2013 Establishment of Financial
+              Free Zone in the Emirate of Abu Dhabi
+            </p>
+          </div>
+          <div class="login-right">
+            <p class="fw-bold">Login As Manager</p>
+            <h1 class="login-main-heading fw-bold manager-name">
+              Welcome Back, <span>Suhail Al Muhairri</span>
+            </h1>
+            <form id="login-form">
+              <div class="mb-3">
+                <label class="form-label fw-bold" for="username">UserName</label>
+                <input type="username" id="username" class="form-control" />
+              </div>
+              <div class="mb-4">
+                <label class="form-label fw-bold" for="password">Password</label>
+                <input type="password" id="password" class="form-control" />
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="rememberMe"
+                  />
+                  <label class="form-check-label fw-normal" for="rememberMe"
+                    >Remember me for 30 days</label
+                  >
+                </div>
+                <a href="javascript:void(0)">Forgot password</a>
+              </div>
+              <a href="approval-notification.html"
+                id="login-btn"
+                class="btn btn-primary adgm-primary-btn" 
+                onclick="formSubmit()">Login</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="loader" class="center"></div>
+    <script src="assets/js/script.js"></script>
+    <script>
+      getData();
+    </script>
+  </body>
+</html>

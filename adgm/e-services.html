@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/scss/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/scss/slick-theme.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/scss/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>ADGM</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="bg1"></div>
+      <div class="bg2"></div>
+      <div class="bg3"></div>
+      <div class="dashboard-wrapper">
+        <div class="dashboard-sidebar" id="sidebar-wrap">
+          <div class="dashboard-logo">
+            <a href="dashboard.html">
+              <img src="assets/images/dashboardlogo.svg" alt="logo" />
+            </a>
+          </div>
+          <ul class="side-bar-menu">
+            <li>
+              <a href="dashboard.html">
+                <span class="menu-icon">
+                  <img src="assets/images/home.svg" />
+                  <span class="dot"></span>
+                </span>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="inbox.html">
+                <span class="menu-icon">
+                  <img src="assets/images/inbox.svg" />
+                  <span class="dot"></span>
+                </span>
+                <span>Inbox</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://teams.microsoft.com/_#/conversations/48:notes?ctx=chat">
+                <span class="menu-icon">
+                  <img src="assets/images/teams.svg" />
+                  <!-- <span class="dot"></span> -->
+                </span>
+                <span>Teams</span>
+              </a>
+            </li>
+            <li>
+              <a href="e-services.html">
+                <span class="menu-icon">
+                  <img src="assets/images/eservices.svg" />
+                  <!-- <span class="dot"></span> -->
+                </span>
+                <span>E Services</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <span class="menu-icon">
+                  <img src="assets/images/eventandannouncement.svg" />
+                  <!-- <span class="dot"></span> -->
+                </span>
+                <span>Events & Announcements</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <span class="menu-icon">
+                  <img src="assets/images/companyresources.svg" />
+                  <!-- <span class="dot"></span> -->
+                </span>
+                <span>Company Resources</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <span class="menu-icon">
+                  <img src="assets/images/companyreport.svg" />
+                  <!-- <span class="dot"></span> -->
+                </span>
+                <span>Company Reports</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <span class="menu-icon">
+                  <img src="assets/images/organizationalchart.svg" />
+                  <!-- <span class="dot"></span> -->
+                </span>
+                <span>Organization Chart</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="dashboard-area">
+          <div class="dashboard-top-bar">
+            <h1 id="topbar-username">Welcome, <span>Ahmed Saeed</span></h1>
+            <div class="timer">
+              <span>Clock In</span>
+              <span class="clock">8:00 AM</span>
+              <span>Clock Out</span>
+              <button type="button" class="timeout-btn">Time Out</button>
+            </div>
+            <div class="user-profile">
+              <span class="top-uname">
+                <img
+                  class="profile"
+                  src="assets/images/searchicon.svg"
+                  alt="search icon"
+                />
+              </span>
+              <span class="top-uname">
+                <img
+                  class="profile"
+                  src="assets/images/notificationbell.svg"
+                  alt="bell icon"
+                />
+                <span class="dot"></span>
+              </span>
+              <span class="top-uname">
+                <img
+                  class="profile"
+                  src="assets/images/settings.svg"
+                  alt="settings"
+                />
+              </span>
+              <div class="dropdown">
+                <button
+                  class="btn"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="assets/images/profile.svg" alt="profile picture" />
+                  <span id="userProfile">Ahmed Saeed </span>
+                  <img src="assets/images/arrow.svg" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="javascript:void(0)" class="dropdown-item">
+                      Profile</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="dropdown-item" onclick="redirect()">
+                      LogOut</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="e-services-main-wrapper sidebar-icon-wrap">
+            <div class="side-bar-slider">
+              <button id="sidebar-toggle-btn">
+                <img src="assets/images/doublearrow.svg" />
+              </button>
+            </div>
+            <div class="container-e-services">
+              <h2 class="e-services-heading">E Services</h2>
+              <div class="row">
+                <div class="e-services-slider">
+                  <div class="card-with-arrow hover-bottom">
+                    <img src="assets/images/absencemanagement.svg" />
+                    <h4>Absence Management</h4>
+                  </div>
+                  <div class="card-with-arrow hover-bottom">
+                    <img src="assets/images/employeerequest.svg" />
+                    <h4>Employee Claims</h4>
+                  </div>
+                  <div class="card-with-arrow hover-bottom">
+                    <img src="assets/images/career-and-learning.svg" />
+                    <h4>Career And Learning</h4>
+                  </div>
+                  <div class="card-with-arrow hover-bottom">
+                    <img src="assets/images/purchase-requisition.svg" />
+                    <h4>Purchase Requisition</h4>
+                  </div>
+                  <div class="card-with-arrow hover-bottom">
+                    <img src="assets/images/recruitment.svg" />
+                    <h4>Recruitment Services</h4>
+                  </div>
+                  <div class="card-with-arrow hover-bottom">
+                    <img src="assets/images/absencemanagement.svg" />
+                    <h4>Absence Management</h4>
+                  </div>
+                  <div class="card-with-arrow hover-bottom">
+                    <img src="assets/images/employeerequest.svg" />
+                    <h4>Employee Claims</h4>
+                  </div>
+                  <div class="card-with-arrow hover-bottom">
+                    <img src="assets/images/career-and-learning.svg" />
+                    <h4>Career And Learning</h4>
+                  </div>
+                  <div class="card-with-arrow hover-bottom">
+                    <img src="assets/images/purchase-requisition.svg" />
+                    <h4>Purchase Requisition</h4>
+                  </div>
+                  <div class="card-with-arrow hover-bottom">
+                    <img src="assets/images/recruitment.svg" />
+                    <h4>Recruitment Services</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="e-services-content-cards">
+              <div class="row">
+                <div class="e-services-content-card">
+                  <div class="card-with-arrow gray-gradient-card">
+                    <div class="inside-bottom-head">
+                      <span class="blue-badge">Absence Managment</span>
+                    </div>
+                    <div class="inside-bottom-content">
+                      <h5>Annual Leave</h5>
+                    </div>
+                    <div class="inside-bottom-arrow">
+                      <span class="arrow">
+                        <img src="assets/images/arrow2.svg" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="e-services-content-card">
+                  <div class="card-with-arrow gray-gradient-card">
+                    <div class="inside-bottom-head">
+                      <span class="blue-badge">Absence Managment</span>
+                    </div>
+                    <div class="inside-bottom-content">
+                      <h5>Peternity Leave</h5>
+                    </div>
+                    <div class="inside-bottom-arrow">
+                      <span class="arrow">
+                        <img src="assets/images/arrow2.svg" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="e-services-content-card">
+                  <div class="card-with-arrow gray-gradient-card">
+                    <div class="inside-bottom-head">
+                      <span class="blue-badge">Absence Managment</span>
+                    </div>
+                    <div class="inside-bottom-content">
+                      <h5>Casual leave</h5>
+                    </div>
+                    <div class="inside-bottom-arrow">
+                      <span class="arrow"
+                        ><img src="assets/images/arrow2.svg"
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="e-services-content-card">
+                  <div class="card-with-arrow gray-gradient-card">
+                    <div class="inside-bottom-head">
+                      <span class="blue-badge">Absence Managment</span>
+                    </div>
+                    <div class="inside-bottom-content">
+                      <h5>Religious holidays</h5>
+                    </div>
+                    <div class="inside-bottom-arrow">
+                      <span class="arrow"
+                        ><img src="assets/images/arrow2.svg"
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="e-services-content-card">
+                  <div class="card-with-arrow gray-gradient-card">
+                    <div class="inside-bottom-head">
+                      <span class="blue-badge">Absence Managment</span>
+                    </div>
+                    <div class="inside-bottom-content">
+                      <h5>Maternity Leave</h5>
+                    </div>
+                    <div class="inside-bottom-arrow">
+                      <span class="arrow"
+                        ><img src="assets/images/arrow2.svg"
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="e-services-content-card">
+                  <div class="card-with-arrow gray-gradient-card">
+                    <div class="inside-bottom-head">
+                      <span class="blue-badge">Absence Managment</span>
+                    </div>
+                    <div class="inside-bottom-content">
+                      <h5>Bereavement Leave</h5>
+                    </div>
+                    <div class="inside-bottom-arrow">
+                      <span class="arrow"
+                        ><img src="assets/images/arrow2.svg"
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="e-services-content-card">
+                  <div class="card-with-arrow gray-gradient-card">
+                    <div class="inside-bottom-head">
+                      <span>Absence Managment</span>
+                    </div>
+                    <div class="inside-bottom-content">
+                      <h5>Compensatory Leave</h5>
+                    </div>
+                    <div class="inside-bottom-arrow">
+                      <span class="arrow"
+                        ><img src="assets/images/arrow2.svg"
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="e-services-content-card">
+                  <div class="card-with-arrow gray-gradient-card">
+                    <div class="inside-bottom-head">
+                      <span>Absence Managment</span>
+                    </div>
+                    <div class="inside-bottom-content">
+                      <h5>Unpaid Leave</h5>
+                    </div>
+                    <div class="inside-bottom-arrow">
+                      <span class="arrow"
+                        ><img src="assets/images/arrow2.svg"
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="container-message" id="message">
+              <div class="arrow">
+                <div class="outer-message"></div>
+                <div class="inner-message"></div>
+              </div>
+              <div class="comment">
+                <p>Speak to navigate within the portal easier</p>
+              </div>
+            </div>
+            <button class="speaker-btn" id="button">
+              <span class="outer">
+                <span class="inner">
+                  <img src="assets/images/speaker.svg" />
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="loader" class="center"></div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".e-services-slider").slick({
+          slidesToShow: 5,
+          autoplay: true,
+        });
+      });
+    </script>
+    <script src="/assets/js/script.js"></script>
+     <script>
+      getData();
+    </script>
+  </body>
+</html>
